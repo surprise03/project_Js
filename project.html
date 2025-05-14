@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendShare</title>
+    <link rel="stylesheet" href="./project.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+<div id="loader">
+    <div class="intro-container">
+      <div class="word get">share</div>
+      <div class="word your-work">Your </div>
+      <div class="word done">Thoughts</div>
+    </div>
+  </div>
+  
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/images.png" alt="TrendShare Logo" />
+            <p>TrendShare</p>
+        </div>
+        <div class="sign_lag">
+            <div class="language-dropdown">
+                <img src="./Images/network_11744823.png" alt="Language" />
+                <select>
+                    <option value="en">Languages</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <!-- Add more as needed -->
+                </select>
+            </div>
+
+            <!-- <button><a href="./adminLogin.html" style="text-decoration: none; color: white;">Admin Login</a></button> -->
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Sticky Sidebar -->
+        <div class="side_container">
+            <div class="content">
+                <p id="home" class="active">Home</p>
+                <p id="trending">Trending</p>
+                <p id="post">Post</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Content Areas -->
+        <div class="main_content" id="home_container">
+            <h1>Welcome to TrendShare! 🌍</h1>
+            <p>Discover and discuss the latest trends around the world.</p>
+
+            <!-- Featured Image or Banner -->
+            <div class="banner">
+                <img src="./Images/image.png" alt="Trending Banner" />
+            </div>
+
+            <!-- Highlights Section -->
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>🌟 Discover</h3>
+                    <p>Explore what's trending globally across topics you care about.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>✍️ Share</h3>
+                    <p>Post your thoughts and start conversations with a like-minded community.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>💬 Engage</h3>
+                    <p>Comment and connect with others through ideas and discussions.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main_content trendingContainer" id="Trending_container" style="display: none;">
+            <h1>Trending Now 🔥</h1>
+            <p>Stay tuned for real-time trending topics .</p>
+        </div>
+        <img src="" alt="">
+
+        <div class="main_content" id="post_container" style="display: none;">
+            <h1>Share a Trend ✍️</h1>
+            <form id="trendForm">
+
+
+
+
+
+                <input type="text" placeholder="Past image url (optional)" id="image">
+                <input type="text" id="trendTitle" placeholder="Trend Title" required />
+                <textarea id="trendDesc" placeholder="What's trending?" required></textarea>
+                <button type="submit" onclick="submitdata()">Post Trend</button>
+            </form>
+            <div id="postedTrends"></div>
+        </div>
+    </div>
+
+    <script src="./project.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+          setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+          }, 5000); // 5 seconds
+        });
+      </script>
+      
+</body>
+
+</html>

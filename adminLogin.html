@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .forgot-password,
+        .signup-link {
+            display: block;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .forgot-password:hover,
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            width: 90%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .google-button {
+            background-color: #DB4437;
+        }
+
+        .google-button:hover {
+            background-color: #c1351d;
+        }
+
+
+        /* header */
+        .header {
+
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 13vh;
+            padding: 0 20px;
+            border-bottom: 1px solid black;
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .logo p {
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .sign_lag {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sign_lag span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .sign_lag button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .sign_lag button:hover {
+            background-color: #0056b3;
+        }
+
+        .sign_lag img {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/images.png" alt="Miro Logo">
+            <p>TrendShare</p>
+        </div>
+
+    </header>
+    <div class="container" id="container">
+        <h2>Admin</h2>
+        <form>
+            <input type="Admin_login" id="Admin_login" placeholder="Enter the admin name" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" onclick="login(event)" id="adminLogin">login</button>
+        </form>
+    </div>
+    <script src="./admin.js"></script>
+</body>
+
+
+</html>
