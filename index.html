@@ -1,79 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        * {
-            font-family: "Work Sans", sans-serif;
-
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup | TrendShare</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { font-family: "Work Sans", sans-serif; }
+  </style>
 </head>
-
 <body>
-    <!-- this is a header section start -->
-    <header class="header">
-        <div class="logo">
-            <img src="./Images/images.png" alt="Miro Logo">
-            <p>TrendShare</p>
-        </div>
-        <div class="sign_lag">
-            <!-- <b href="#"><img src="./Images/network_11744823.png" alt="Language">EN</b> -->
 
-            <button><a href="./login.html" class="yooo">Sign in</a></button>
-        </div>
-    </header>
-    <!-- header section ends here -->
-
-    <div class="login_container">
-        <div class="login_main">
-            <div class="container1">
-                <p class="sign_head">Sign up for free</p>
-                <P>We recommend using your work email — it keeps work and life separate.</P>
-                <P>Work email</P>
-                <div class="input-container">
-                    <p>Email</p>
-                    <input type="text" placeholder="Email">
-                    <p>Password</p>
-                    <input type="text" name="" id="" placeholder="Password">
-                    <p>Confirm Password</p>
-                    <input type="text" name="" id="" placeholder="Confirm-Password">
-                    
-                <button>Sign up</button>
-
-                </div>
-
-                
-            </div>
-            <center>
-                <p>Or</p>
-            </center>
-            <div class="container2">
-                <div class="web_login">
-
-                    <button>Sign up with Google</button><br>
-
-                </div>
-
-                <p>Sign up to a different region or a private organization</p>
-                <p>By signing up, you agree with Miro's <a href="">Terms & conditions</a> and <a href="">privacy
-                        policy</a>
-                </p>
-            </div>
-
-        </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="./Images/images.png" alt="Miro Logo"/>
+      <p>TrendShare</p>
     </div>
+    <div class="sign_lag">
+      <button><a href="./login.html" class="yooo">Sign in</a></button>
+    </div>
+  </header>
 
+  <!-- Sign up Form -->
+  <div class="login_container">
+    <div class="login_main">
+      <div class="container1">
+        <p class="sign_head">Sign up for free</p>
+        <p>We recommend using your work email — it keeps work and life separate.</p>
+        <div class="input-container">
+          <p>Email</p>
+          <input type="text" id="email" placeholder="Email"/>
+          <p>Password</p>
+          <input type="password" id="password" placeholder="Password"/>
+          <p>Confirm Password</p>
+          <input type="password" id="confirmPassword" placeholder="Confirm-Password"/>
+          <button id="signUpBtn">Sign up</button>
+        </div>
+      </div>
 
-<script src="./js.js" type="module"></script>
+      <center><p>Or</p></center>
+
+      <div class="container2">
+        <div class="web_login">
+          <button id="googleSignUpBtn">Sign up with Google</button>
+        </div>
+        <p>Sign up to a different region or a private organization</p>
+        <p>By signing up, you agree with Miro's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase JS -->
+  <script type="module" src="./js.js"></script>
 </body>
-
 </html>
